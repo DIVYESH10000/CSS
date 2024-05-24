@@ -49,6 +49,13 @@
         /* Group Selector */
         #kaley, .baley {
             color: red;
+        } 
+        /* Descendent Selector */
+        
+        div p {color : crimson;}
+        
+            
+        
 
     </style>
 
@@ -147,28 +154,51 @@
             <big>8. Selectors (Class selector)</big>
         </i>
     </h1>
-    <b>Group Styling : </b>Allows styling of <span>multiple elements</span> grouped under
-    class. <br>
-    <b>Syntax : </b>Utilizes the <span>dot(.)</span>symbol. <br>
-    <b>Reusable : </b>Can be used on multiple elements for <span>consistent styling</span>. <br>
-    <b>Versatility : </b>Ideal for applying styles to a category of elements. <br>
-    
-        <h4 class="core">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque, dicta.</h4><br>
-        <p class="core">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat, facere?</p>
-
+    <p>
+        <b>Group Styling : </b>Allows styling of <span>multiple elements</span> grouped under
+        class. <br>
+        <b>Syntax : </b>Utilizes the <span>dot(.)</span>symbol. <br>
+        <b>Reusable : </b>Can be used on multiple elements for <span>consistent styling</span>. <br>
+        <b>Versatility : </b>Ideal for applying styles to a category of elements. <br>
+        
+            <h4 class="core">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque, dicta.</h4><br>
+            <p class="core">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat, facere?</p>
+    </p>    
     <h1>
         <i>
             <big>8. Selectors (Group selector)</big>
         </i>
     </h1>
     <p>
-        <b>Multiple Elements : </b>Styles <span>multiple</span>elements simultaneously
-
+        <b>Multiple Elements : </b>Styles <span>multiple</span>elements simultaneously. <br>
+        <b>Syntax : </b> Separates selectors with <span>commas</span>. <br>
+        <b>Efficiency : </b> Reduces code <span>redundency</span> and saves time. <br>
 
         
     </p>
-            <h3 id="kaley">Example of Group Selector</h3>
-            <p class="baley">Example of Group Selector</p>
+    <h3 id="kaley">Example of Group Selector</h3>
+    <p class="baley">Example of Group Selector</p><br><br>
+    <h1>
+        <i>
+            <big>8. Selectors (Descendent selector)</big>
+        </i>
+    </h1>
+    <p>
+        <b>Nested Targeting : </b>Styles elements<span>nested</span>within specified element. <br>
+        <b>Syntax : </b> Separate selectors with spaces. <br>
+        <b>Hierarchy-Based : </b>Allows styling based on the <span>hierarchical</span> structure of  HTML. <br>
+        <b>Specific Styling : </b>Facilitates more <span>targeted</span> and specific styling of elements. <br>   
+    </p>
+    <!-- Example of Descendent Selector -->
+    <div id="six">
+        <p>
+            Hey, there! <br>
+            How are you ?
+        </p>
+    </div>
+    <p>
+        This is an example of Descendent Selector.
+    </p>
     
 </body>
 </html>
