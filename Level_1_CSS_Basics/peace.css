@@ -3,7 +3,11 @@ h1 {
 }
 p {
     color: violet;
-    background-color: grey;
+    
+    margin: 5%;
+    padding:20px 30px 40px 50px;
+
+    background-color: rgb(37, 65, 75);
 }
 span {
     color: greenyellow;

@@ -29,6 +29,28 @@
             color : red;
         }
     </style> -->
+    
+    <style>
+        /* ID selector */
+        #first { color : red}
+        #second { color : greenyellow}
+
+        #abc{
+            color: hotpink;
+        }
+        #def{
+            color: violet;
+        }
+        /* Class Selector */
+        .core {
+            color: chocolate;
+        }
+
+        /* Group Selector */
+        #kaley, .baley {
+            color: red;
+
+    </style>
 
 </head>
 <body>
@@ -74,21 +96,79 @@
         <b>Syntax : </b>Utilized as an <span>asterisk(*)</span>. <br>
         <b>Resets Styles : </b>Commonly used to <span>reset margins</span> and paddings globally. <br>
         <b>Broad Styling : </b>Useful for setting Universal attributes like <span>font color</span>. <br>
-        <b>Usage Caution : </b>Can cause style <span>conflicts</span> due to it's wide-reaching effects. <br>
+        <b>Usage Caution : </b>Can cause style <span>conflicts</span> due to it is wide-reaching effects. <br>
     </p>
+
     <h1>
         <i>
-            <big>8. Selectors (Id selectors)</big>
+            <big>8. Selectors (Id & class)</big>
+        </i>
+    </h1>
+    <p>
+        <b>Id and Class Properties are mostly used for CSS.</b><br>
+        <b>ID Property : </b>Assigns a <span>unique identifier</span> to a <span> single HTML element</span>. <br>
+        <b>Class Property : </b>Allows grouping of multiple HTML elements to style them collectively. <br>
+        <b>Reusable Classes : </b>Class properties can be reused across different element for consistent styling. <br>
+        <b>Specificity and Targeting : </b>Both properties assist in targeting specific     elements or groups of elements for precise styling.
+    </p>
+
+    <h1>
+        <i>
+            <big>8. Selectors (Id selector)</big>
         </i>
     </h1>
     <p>
         <b>Unique Identifier :  </b>targets a specific element with a <span>unique ID</span> attribute.<br>
-        <b>Syntax :  </b>Each ID should be used <span>once per page</span> for uniqueness. <br>
+        <b>Syntax :  </b>Uses the <span>hash (#)</span> symbol.<br>
+        <b>Single Use : </b>Each ID should be used <span>once per page</span> for uniqueness. <br>
         <b>Specific Targeting : </b>Ideal for styling <span>individual, distinct </span>elements.
-    </p>
-    
-    
 
+        <!--ID Selector
+        <head>
+            <style>
+            #first { color : green; }
+            #second { color : red; }
+            </style>
+        </head>
+        <body>
+            <div id = "first"> First Div </div>
+            <div id = "second"> Second Div </div>
+        </body>
+        -->
+    </p>
+
+    <div id = "first"> First Div </div>
+    <div id = "second"> Second Div </div>
+    <h2 id="abc">Example of ID selector</h2>
+    <div id="def"> </div>
+
+    <h1>
+        <i>
+            <big>8. Selectors (Class selector)</big>
+        </i>
+    </h1>
+    <b>Group Styling : </b>Allows styling of <span>multiple elements</span> grouped under
+    class. <br>
+    <b>Syntax : </b>Utilizes the <span>dot(.)</span>symbol. <br>
+    <b>Reusable : </b>Can be used on multiple elements for <span>consistent styling</span>. <br>
+    <b>Versatility : </b>Ideal for applying styles to a category of elements. <br>
+    
+        <h4 class="core">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque, dicta.</h4><br>
+        <p class="core">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat, facere?</p>
+
+    <h1>
+        <i>
+            <big>8. Selectors (Group selector)</big>
+        </i>
+    </h1>
+    <p>
+        <b>Multiple Elements : </b>Styles <span>multiple</span>elements simultaneously
+
+
+        
+    </p>
+            <h3 id="kaley">Example of Group Selector</h3>
+            <p class="baley">Example of Group Selector</p>
     
 </body>
 </html>
