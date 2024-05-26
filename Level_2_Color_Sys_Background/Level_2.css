@@ -1,0 +1,76 @@
+
+
+/* For Edge to Edge Coloring */
+*{
+    margin: 0; padding: 0;
+}
+
+
+.back_learn{
+    color: indianred;
+    background-color: rgb(13, 4, 64);
+}
+
+
+/* 
+div{
+    height: 100px;
+    width: 300px;
+} */
+
+
+#first{color:hwb(0 20% 62%); background-color: red;}
+#second{color:black; background-color: yellowgreen;}
+button{color:black; background-color: violet;}
+
+/* RGB Color Model */
+#apple{background-color: rgb(122, 106, 216);}
+
+/* HEX Color Model */
+#banana{background-color: #00ffff;}
+
+/* Alpha Channel (RGBA)*/
+#kiwi{color: #00ffff; background-color: rgb(138, 43, 226, 1);}
+
+/* Height & Width Property */
+
+.box {height : 40px; width: 40px;}
+#box1 { background-color: red;}
+#box2 {background-color: blue;}
+#box3 {background-color: green;}
+
+/* Background image Property */
+
+/* background-image: url(url of image); 
+
+// When we wanna deliberately fit our img in provided height and width.
+
+   background-size: contain; 
+
+// When Original size is of bigger dimensions the brower repeats our 
+      image,  so according to our need we set it.
+
+   background-repeat: no-repeat;
+   
+   CHECK OTHER attributes OF background image 
+
+*/
+
+#backg_img {height: 300px;
+            width: 300 px;
+            background-image: url(myntra.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;       
+        }
+
+/* Visibility Property */
+/* 
+    Same Thing
+
+    visibility: hidden; 
+    visibility: collapse
+ */
+.container {height: 50px; width: 50px;}
+#box_x { background-color: red; visibility: hidden;} 
+#box_y { background-color: green; visibility: visible;}
