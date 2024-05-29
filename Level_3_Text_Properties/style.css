@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.content {
+    height: auto; 
+    width: auto;
+    background-color: beige;
+}
+
+#index {
+    color: violet;
+}
+#back_img {
+    /* background image */
+    color: rgb(179, 32, 32);
+    background-color: hotpink;
+    background-image: url(https://img.freepik.com/free-vector/hand-painted-nature-background_23-2148940793.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    /* background-size: cover; */
+    /* background: red, url(tony.png), no-repeat, center; */
+}
+#one {
+    color: rgb(136, 41, 165);
+}
+
+/* Text Align Property */
+.box {height: 200px; width: 200px; color: black;}
+#box1 {background-color: red; text-align: center;}
+#box2 {background-color: green; text-align: left;}
+#box3 {background-color: rgb(36, 36, 156, 0.75); text-align: right;}
+
+#two{ 
+    color: rgb(11, 44, 33);
+    
+}
+
+#three h1{
+    color: black;
+    text-align: center;
+    background-color: yellowgreen;
+    text-decoration: underline;
+    text-decoration-style: double;
+    text-decoration-color: fuchsia;
+    text-transform: capitalize;
+}
+
+/* Text-Decoration Property */
+#boxOne { text-decoration: underline; }
+#boxTwo { text-decoration: overline}
+#boxThree { text-decoration: line-through}
+
+#link {text-decoration: none;} 
+
+/* Text-Decoration Property (style) */
+.x {text-decoration: underline;}
+#a1 { text-decoration-style: dashed;}
+#a2 { text-decoration-style: dotted;}
+#a3 { text-decoration-style: double;}
+#a4 { text-decoration-style: solid;}
+#a5 { text-decoration-style: wavy;}
+
+
+
+/* Text-Decoration Property (color) */
+.dec { text-decoration: underline;}
+#b1 { text-decoration-color: red;}
+#b2 { text-decoration-color: green;}
+#b3 { text-decoration-color: blue;}
+#b4 { text-decoration-color: rgb(136, 41, 165);}
+
+/* 17. Text-Transform Property */
+.y { color: blueviolet;}
+#c1 { text-transform: uppercase;}
+#c2 { text-transform: lowercase;}
+#c3 { text-transform: capitalize;}
+#c4 { text-transform: none;}
+
+/* 18. Line Height property */
+#lineH1 { line-height: 7px;}
+#lineH2 { line-height: 27px;}
+
+/* 19. Font Property (font - size) */
+#p { font-size: 5px;}
+#q { font-size: 25px;}
+#r { font-size: 15px;}
+#s { font-size: 50px;}
+
+/* 19. Font Property (font - weight) */
+#m { font-weight: 50;}
+#n { font-weight: 500;}
+#o { font-weight: 900;}
+
+
+/* 19. Font Property (font - style) */
+#I { font-style: italic;}
+#Me { font-style: oblique;}
+#Myself { font-style: normal}
+
+/* 20. Font Family */
+#font_fam {
+    color: steelblue;
+    font-style: italic;
+    font-family: 'Dancing Script', cursive, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* If Dancing Script doesn't work, Fallback font "cursive will work and so on "*/
+}   
+
+/* 21. Icon using fonts */
+
