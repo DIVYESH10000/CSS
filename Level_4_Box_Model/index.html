@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Box Model</title>
     <link rel="stylesheet" href="style.css">
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sevillana&family=Stalemate&display=swap" rel="stylesheet">
+    
+    <script src="https://kit.fontawesome.com/0025b41989.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
@@ -45,33 +52,121 @@
                 </pre>
             </section>
         </div>
-        <div id="twothree">
+        <div id="twothree" >
             <section id="23">
-                <pre>
+                <pre >
                     <b>23. Padding Property</b>
-                    
+                    • Usage: Defines the space between the content of an element and its
+                      border. <br>
+                    • Individual Sides: Allows setting padding for individual sides using
+                      padding-top, padding-right, padding-bottom, and padding-left.<br>
+                    • Shorthand: Can use shorthand property padding to set all sides at
+                      once, e.g., padding: 10px 20px 10px 20px.
+                      <pre id="padded" class="stalemate-regular">
+
+                        Example:---
+
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        In consequuntur magni, fugiat velit, excepturi at alias
+                        assumenda perferendis sunt cum eius aspernatur asperiores 
+                        repudiandae temporibus laboriosam veritatis natus nihil aliquid?
+                      </pre>
+
                 </pre>
             </section>
         </div>
         <div id="twofour">
             <section id="24">
                 <pre>
-                    <b>23. Padding Property</b>
-
+                    <b>24. Margin Property</b>
+                    • Functionality: Sets the space around elements, separating them from others.
+                    • Individual Sides: Customizable for top, right, bottom, and left sides.
+                    • Shorthand: Allows quick setup, e.g., margin: 10px 20px. (clockwise)
+                    • Auto Value: Can be used for central alignment with auto value.
                 </pre>
+                <p id="mar">
+                  Lorem ipsum, dolor sit amet consectetur 
+                  adipisicing elit. Omnis rem ea laborum natus corrupti
+                  illum quaerat nemo. Veritatis amet, vel magnam ut
+                  Veritatis amet, vel magnam ut atque maxime fugit
+                  eum molestias officia, excepturi expedita. fugit
+                  Lorem ipsum dolor sit amet consectetur fugit fugit
+                  adipisicing elit. Alias distinctio voluptate 
+                  quod voluptatum corrupti quasi cum nihil fugit
+                  eveniet unde. Nobis. Lorem, ipsum dolor sit fugit
+                  amet consectetur adipisicing elit. Esse, fugit
+                  magnam. Lorem ipsum dolor sit amet consectetur
+                  adipisicing elit. Doloremque, accusantium! fugit
+                  quod voluptatum corrupti quasi cum nihil fugit
+                  eveniet unde. Nobis. Lorem, ipsum dolor sit fugit
+                  amet consectetur adipisicing elit. Esse, fugit
+                  magnam. Lorem ipsum dolor sit amet consectetur
+                  adipisicing elit. Doloremque, accusantium! fugit                
+                </p>             
             </section>
         </div>
+
+
+        <div id="fir" class="pad">Padding</div>
+        <div id="sec" class="pad">Padding</div>
+        
+        
         <div id="twofive">
             <section id="25">
-                <pre>
-                    <b>23. Padding Property</b>
+                <pre id="try">
+                    <b>25. Border Property</b>
+
+
+                    • Usage: Creates an outline around HTML elements. <br>
+                    • Components: Defined by width, style, and color attributes.<br>
+                    • Styles: Includes options like solid, dashed, and dotted.<br>
+                    • Shorthand: Can set attributes at once, e.g., border: 2px solid black.<br>              
+
+
+                    <b>24. Border Property (border radius)</b>
+
+                    • Usage: Used to create rounded corners for elements.
+                    • Individual Corners: Allows setting different radii for each corner.
+                    • Shorthand: e.g., border-radius: 10px 20px.
+
+
+                    <b>24. Border Property (box sizing)</b>
+                     
+                    => This mechanism makes sure that nothing goes outside
+                       the box and create space shortage.
+                    
+                    => This makes sure that after adding border and padding the size of 
+                       content doesn't increase.
+
+                    => This defines the size of the box and makes sure that everything
+                       is fitted inside the box only.
+
+                    => THIS IS DONE BY SACRIFICING THE VALUE OF CONTENT.  
+                    
+                    Two Ways :---
+
+                    1- border-box
+                       
+                       Box is formed after the border.
+
+
+                    2- content-box (Default way)
+
+                       Box is formed around the content,  padding and border 
+                       added after it outside the content.
+
+                      NOTE: Height and Width is defined of the box not for content.
+                            Main thing is after height and width are defined the question is 
+                            where the box will be formed, AROUND THE CONTENT OR AROUND THE BORDER.
+                            [padding is automatically included if box is formed around border.]
+
+                            <img src="border.png" alt="">
 
                 </pre>
             </section>
         </div>
-
-        
-
+        <div id="north" class="bor">North</div>
+        <div id="south" class="bor">South</div>
     </main>
     <hr><footer>As you think so shall you become.</footer>
 </body>
