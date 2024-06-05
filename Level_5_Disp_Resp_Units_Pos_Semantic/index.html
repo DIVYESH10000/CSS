@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Display_Responsive_Relative_Units_Position_Semantic</title>
     <link rel="stylesheet" href="style.css">
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <header>
@@ -21,6 +27,222 @@
             
     </header>
     <main>
+        <div id="twosix" class="basic">
+            <section id="26">
+                <b>26. Display Property</b>
+
+                <pre>
+
+                    FIRST WE MUST KNOW : Inline Elements and Block Elements
+
+                                <img src="https://cwh-full-next-space.fra1.cdn.digitaloceanspaces.com/tutorial/html-inline-elements/inline-block-image.jpg" style="height: 300px; width: 500px; " alt="">
+                       Block Elements                                          Inline Elements
+                
+                ● New Line: Start on a new line.                            ● Flow: Stay in line with text.
+                ● Full Width: Take up all horizontal space.                 ● Width: Just as wide as the content.
+                ● Styling: Can have margins and padding.                    ● No Break: No new line between elements.
+                ● Size: Width and height can be set.                        ● Limited Styling: Can't set size easily.
+                <span>
+                ● Examples: < div >, < p >, < h1 >, < ul >, < li >.         ● Examples: < span >, < a >, < strong >, < em >. </span>
+
+                <hr>
+                <b >26. Display Property (Block)</b>
+                This property is by default blocked, but we can change it to inline
+
+                Example :---
+
+                <div id="box1" class="box">Box 1</div>
+                <div id="box2" class="box">Box 2</div>
+                </pre>
+            </section>
+        </div>
+        <b style="font-size: 30px;">26. Display Property (Inline)</b>
+
+        display: inline;  This property prevents height form having an effect <hr><br><br>
+
+        <div id="box3" class="bobo">Box 1</div>
+        <div id="box4" class="bobo">Box 2</div><br><br><hr>    
+
+        <b style="font-size: 30px;">26. Display Property (Inline-Block)</b>
+
+        To overcome the problems of display : inline, we have :------  
+        display : inline-block <hr><br><br>
+
+        <div id="box5" class="star">Box 1</div>
+        <div id="box6" class="star">Box 2</div>
+
+
+        <b style="font-size: 30px;">26. Display Property (Inline-Block)</b>
+
+        Sometime when we want to del;ete an element, instead of <span>visibility : hidden </span>(because it still take s the space) <br>
+        we can set  :------  <br> 
+
+        <span> display : none</span><hr><br><br>
+        
+
+        <div id="box7" class="starlord">Box 1</div>
+        <div id="box8" class="starlord">Box 2</div>
+
+        <div id="twoseven" class="basic">
+            <section id="27">
+                <b>27. Responsive Websites</b><br>
+                <pre>
+                     
+                    Note : Uptill now we were defining sizes in pixels i.e. <span>"Absolute Unit"</span> now we'll learn <span>Relative units</span>to make <span>Responsive Websites</span>.
+
+                    <img src="resp.png" alt="">                                            <img src="respOpt.png" alt=""><br><br>
+                                    1. Adapts layout for different screen sizes
+                                    2. Flexible layouts
+                                    3. Optimizes images and assets
+                                    4. Enhances user experience on mobile and desktop
+                </pre>
+            </section>
+        </div>
+        <div id="twoeight">
+            <section id="28">
+                
+                    <b style="font-size: 30px;">28. Relative Units</b><br>
+                <pre>
+                    <img src="relUnit.png" style="height: 200; width: 600;" alt="check con"><br>
+                
+                    <b style="font-size: 30px;">28. Relative Units (Percentage)</b><br>
+                    • Relative Sizing: Facilitates dynamic sizing relative to parents.
+                    • Adaptability: Ensures responsiveness across various screens.
+                    • Dimensions: Quickly set width and height as a percentage.
+
+                    Example:--
+
+                    <div id="fir">First Div
+                        <div id="sec">Second Div</div>
+                    </div>
+                    
+
+
+
+
+                    <b style="font-size: 30px;">28. Relative Units (EM)</b><br>
+                    • Relative Unit: Sized relative to the parent element's font size.
+                    • Scalability: Facilitates easy scaling of elements for responsive design.
+                    • Font Sizing: Commonly used for setting font sizes adaptively.
+
+                    Example:--
+
+                    This shows that the font-size of child element is dependent on parent element.  
+                    In this example child is <span>2em</span>  i.e. two times the parent element's font-size.
+                        <div id="pogo">first
+                            <div id="cn">second</div>
+                        </div>
+
+
+                    
+
+                    <b style="font-size: 30px;">28. Relative Units (REM)</b><br>
+                    • Relative Sizing: Facilitates dynamic sizing relative to root element.
+                    • Adaptability: Ensures responsiveness across various screens.
+                    • Dimensions: Quickly set width and height as a percentage.
+
+
+                    Example:----
+                    <div id="billy">first
+                        <div id="mandy">second</div>
+                    </div>
+            
+                    <b style="font-size: 30px;">28. Relative Units (VW/VH)   </b><br>
+
+                    • Viewport Relative Units: Units based on viewport's width (vw) or height (vh) for responsive design.<br>
+
+                    • Responsive Layouts: Essential for creating adaptive layouts; e.g., height: 100vh for
+                    full-screen sections. <br>
+                    • Element Sizing: Useful for defining heights and widths that scale with the viewport.
+
+                    Example:----
+                    <div id="johny">First Div</div>                      
+                </pre>
+            </section>
+            
+
+        </div>
+        <div id="twonine" class="basic">
+            <section id="29">
+                <b>29. Position Property</b>
+                <pre style="text-align: left; background-color: seagreen;">
+                    <img src="positionprop.jpg" alt="">
+
+                    • Static (default) : Elements follow the normal document flow. (top, right,
+                      bottom, left, z-index would not work)
+
+                    • Relative: Element's position adjusted from its normal position.
+
+                    • Absolute: Positions element relative to the nearest positioned ancestor.
+
+                    • Fixed: Element positioned relative to the viewport, does not move on scroll.
+                </pre>
+            </section>
+        </div>
+        Example:---- <hr><br><br>
+
+                <div id="box1" class="pos">Box 1</div>
+                <div id="box2" class="pos">Box 2</div>
+                <div id="box3" class="pos">Box 3</div>
+                <div id="box4" class="pos">Box 4</div>
+                <div class="pos">Box</div>
+                <div class="pos">Box</div>
+                <div class="pos">Box</div>
+                <div class="pos">Box</div>
+                <div class="pos">Box</div>
+                <div class="pos">Box</div>
+                <div class="pos">Box</div>
+                <div class="pos">Box</div>
+                <div class="pos">Box</div>
+
+            <b>29. Position Property (z index)</b><br>
+
+            • Stacking Order: Determines the stacking order of elements along
+              the Z-axis.<br>
+            • Position Context: Only applies to elements with position set to
+              relative, absolute, fixed, or sticky.<br>
+            • Integer Values: Accepts integer values, including negative numbers.<br>
+            • Higher Values: An element with a higher z-index value appears
+              above others.<br><br>
+
+              Example:----
+              <div class="container">
+                <div class="box1">Z-index-2</div>
+                <div class="box2">Z-index-1</div>
+              </div>
+
+              
+
+        
+        
+        
+              
+
+              <br><br><br><br><br><br>
+        <div id="threezero" class="basic">
+            <section id="30">
+                <b>30. Semantic Tags</b>
+                
+                <pre>
+                    <img src="semantic.png" alt="">     <img src="layout.png" alt="">
+
+                    
+                    Semantic Tags                                               Non-Semantic Tags     
+                
+                ● New Line: Start on a new line.                            ● Flow: Stay in line with text.
+                ● SEO: Good for search engines.                             ● For Styling: Used for layout.
+                ● Accessibility: Useful for screen readers.                 ● No SEO: Not SEO-friendly.
+               
+                <span>
+                ● Examples: < header >, < footer >,                         ● Examples: < div >, < span >, < i >, < b >. < /span >
+
+                < article >, < section >, < nav >.                         
+                <hr>
+                
+                </pre>
+        
+            </section>
+        </div>
 
     </main>
     <footer>

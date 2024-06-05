@@ -1,0 +1,287 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-size: 20px;
+    
+
+}
+
+#lev5 {
+    text-align: center;
+    text-decoration: none;
+    
+}
+
+/*General class for layout*/
+
+.basic {
+
+    height: fit-content;
+    width: fit-content;
+
+    text-align: center;
+    text-decoration: none;
+    text-transform: capitalize;
+
+    color: rgb(255, 255, 255);
+    background-color: rgb(8, 8, 8);
+
+ 
+    
+
+    margin: 20px;
+    padding: 20px;
+
+    line-height: 30px;
+    font-size: 15px;
+    font-weight: bold;
+    font-style: oblique;
+
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+span {
+    color: rgb(56, 255, 20);
+}
+
+#twosix {
+    background-image: url(https://images.unsplash.com/photo-1553095066-5014bc7b7f2d?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-position: center;
+    background-repeat: repeat;
+    background-size: contain;
+
+    text-align: justify;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 35px;
+
+}
+
+.box {
+    height: 100px;
+    width: 100px;
+    margin: 5px;
+    background-color: olivedrab;
+
+    display: block;  /*By default its blocked for <div> */
+
+}
+
+
+
+ /*display: inline;  This property prevents height form having an effect*/
+.bobo {
+    font-weight: bold;
+
+    height: 100px;
+    width: 100px;
+    margin: 5px;
+    background-color: olivedrab;
+
+    display: inline;
+
+
+}
+
+/* To overcome the problems of display : inline, we have :------  display : inline-block   */
+.star {
+    height: 100px;
+    width: 100px;
+    margin: 5px;
+    background-color: olivedrab;
+
+    display: inline-block; 
+}
+
+.starlord {
+    height: 100px;
+    width: 100px;
+    margin: 5px;
+    background-color: olivedrab;
+
+    
+
+}
+#box7 {
+    /* visibility: hidden;   Its still takes space*/
+    display: none; /* Now Box2 will come in place of Box1 */
+}
+
+/* Responsivce Website */
+
+#twoseven {
+    background-image: url(https://images.unsplash.com/photo-1553095066-5014bc7b7f2d?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-position: cover;
+    background-repeat: repeat;
+    background-size: contain;
+
+    text-align: left;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 35px;
+
+}
+
+
+#twoeight{
+    font-weight: bold;
+    font-size: 15px;
+    color: white;
+    background-color: rgb(44, 32, 32);
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200   ;
+    font-style: normal;
+    font-variation-settings:
+        "slnt" 0;
+}
+
+/* 28. Relative Units (Percentage) */
+
+#fir {
+    height: 100px;
+    width: 200px;
+    background-color: rgb(156, 63, 63);
+    
+}
+
+
+#sec {
+    background-color: rgb(70, 31, 107);
+    width: 50%;
+    height: 30%;
+}
+
+
+/* 28. Relative Units (EM) */
+
+#pogo {
+    height: 200px;
+    width: 200px;
+    background-color: rgb(32, 105, 153);
+    font-size: 25px;
+}
+#cn {
+    height: 70%;
+    width: 50%;
+    background-color: rgb(114, 7, 105);
+    font-size: 2em ;
+}
+
+
+/* 28. Relative Units (REM) 
+
+ Deals with the root element ,  In my case it's #twoeight */
+
+#billy {
+    height: 200px;
+    width: 200px;
+    background-color: rgb(78, 91, 214);
+    font-size: 25px;
+}
+#mandy {
+    height: 70%;
+    width: 50%;
+    background-color: rgb(165, 106, 104);
+    font-size: 2rem ;
+}
+
+
+/* 28. Relative Units (VW/VH) */
+
+#johny {
+   
+    width: 50vw;
+    height: 50vh;
+    background-color: deeppink;
+}
+
+/* 29. Position Property */
+.pos {
+    background-color: indianred;
+    margin: 5px;
+    height: 10vh;
+    width: 10vh;
+}
+
+#box1 {
+    position: static;
+}
+
+#box2 {
+    position: relative;
+
+    top: 10px;
+    left: 50px;
+
+    
+}
+
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ This is a problema s the box3 goes to top of page 
+    to bring it near my othere boxes I gotta set top : 2000px,  I am not sure if this is the right way. */
+
+#box3 {
+    position: absolute;
+   /* top: 20px; This is moving w.r.t to the PARENT, keep that in mind.*/
+    left: 200px;
+    
+}
+
+
+#box4 {
+    position: fixed;
+    right: 20px;
+} 
+
+
+/* 29. Position Property (z index) */
+
+.container {
+    position: relative;
+}
+
+
+.box1, .box2 {
+
+    position: absolute;
+    border: 3px solid black;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    font-size: 25px;
+}
+
+.box1 {
+    background-color: red;
+    left: 20px;
+    top: 50px; 
+    z-index: 2;
+}
+
+.box2 {
+    background-color: aqua;
+    left: 50px;
+    /* top: 60px; */
+    z-index: 1;
+}
+
+
+
+
+#threezero{
+    background-image: url(https://images.unsplash.com/photo-1553095066-5014bc7b7f2d?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-position: center;
+    background-repeat: repeat;
+    background-size: contain;
+
+    text-align: justify;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 35px;
+}
+
+
