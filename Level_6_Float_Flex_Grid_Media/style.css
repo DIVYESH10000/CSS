@@ -1,0 +1,474 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Times New Roman', Times, serif;
+}
+header {
+    background-color: rgb(200, 137, 231);
+    height: 14%;
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+}
+h1 {
+    text-align: center;
+}
+#icon {
+    text-align: center;
+    width: 100%;
+    margin: 0.5%;
+    padding: 5px;
+}
+nav a {
+    margin-left: 4.25%;
+    padding: 2%px;
+
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+}
+nav {
+    padding: 5px;
+}
+
+body {
+    background-color: rgb(248, 162, 205);
+    
+}
+main {
+    position: relative;
+    top: 15vh;
+}
+span {
+    color: yellow;
+}
+footer {
+    position: fixed;
+    bottom: 0%;
+    width: 100%;
+    background-color: cornflowerblue;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* --------------------------------------- Event ---------------------------------------*/  
+
+
+/* Float */
+#container1 {
+    height: 200px;
+    width: 500px;
+    background-color: royalblue;
+    border: 3px solid black;
+    margin-left: 50px;
+}
+.box {
+    height: 150px;
+    width: 150px;
+    background-color: tomato;
+    margin: 20px;
+    border: 3px solid black;
+    float: right;
+}
+/* ----------------- Flexbox ------------*/
+
+.xbox {
+    height: 75px;
+    width: 200px; 
+    border: 3px solid black;
+    margin: 2px;
+}
+#container2 {
+    height: 600px;
+    width: 600px;
+    margin: 20px;
+    padding: 10px;
+    
+    background-color: silver;
+    border: 3px solid black;
+    display: flex;
+    flex-direction: row-reverse;
+    
+
+}
+#boxa {background-color: teal;}
+#boxb {background-color: cornflowerblue;}
+#boxc {background-color: springgreen;}
+#boxd {background-color: crimson;}
+
+/* Justify-Content */
+.bobo {
+    height: 75px;
+    width: 75px; 
+    border: 3px solid black;
+    margin: 2px;
+}
+#contFlex {
+    height: 600px;
+    width: 600px;
+    margin: 20px;
+    padding: 10px;
+    
+    background-color: silver;
+    border: 3px solid black;
+    display: flex;
+    /* display: flex; Is must for justify-content: ; */
+    
+    /* Justify-Content */
+
+    /* justify-content:flex-end; */
+
+    /* justify-content: flex-start; */
+
+    /* justify-content: center; */
+
+    /* justify-content: space-between; */
+    /* justify-content: space-around; */
+    justify-content: space-evenly;
+}
+#boxm {background-color: teal;}
+#boxn {background-color: cornflowerblue;}
+#boxo {background-color: springgreen;}
+#boxp {background-color: crimson;}
+
+
+.gogo {
+    height: 150px;
+    width: 150px; 
+    border: 3px solid black;
+    margin: 10px;
+}
+#fc {
+    height: 600px;
+    width: 600px;
+    margin: 10px;
+    border: 3px solid rebeccapurple;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    /* Flex Wrap */
+
+    /* flex-wrap: nowrap;  NO effect*/
+
+    flex-wrap: wrap;
+
+    /* flex-wrap: wrap-reverse;  Similar to LIFO*/
+
+    
+
+}
+#apple {background-color: teal;}
+#banana {background-color: cornflowerblue;}
+#kiwi {background-color: springgreen;}
+#orange {background-color: crimson;}
+#fig {background-color: darkseagreen;}
+#plum {background-color: goldenrod;}
+
+/* Align-items */
+.goa {
+    height: 100px;
+    width: 100px;
+    margin: 5px;
+    border: 2px solid black;
+}
+
+.metalhead {
+    height: 600px;
+    width: 600px;
+    padding: 10px;
+    margin: 5px;
+    border: 2px solid black;
+    background-color: darkslategrey;
+
+
+    display: flex;
+    justify-content: center;
+
+    /*  35. Properties: Flexbox container (Align Items) */
+
+    /* align-items: end; */
+    /* align-items: start; */
+    align-items: center;
+
+
+}
+#b1 { background-color: darkmagenta;}
+#b2 { background-color: orangered;}
+#b3 { background-color: crimson;}
+#b4 { background-color: beige;}
+
+
+/* 35. Properties: Flexbox container (Align Content) */
+
+.metalgear {
+    height: 600px;
+    width: 600px;
+    padding: 10px;
+    margin: 20px;
+    border: 3px solid black;
+    background-color: rgb(131, 139, 209);
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* revolves around main-axis*/
+    align-items: center;      /*revolves around cross-axis*/
+
+    align-content: center;
+    
+
+
+}
+
+#c1 { background-color: rgb(89, 97, 165);}
+#c2 { background-color: rgb(148, 18, 98);}
+#c3 { background-color: rgb(126, 89, 97);}
+#c4 { background-color: rgb(179, 86, 24);}
+
+/* 35. Properties: Flexbox container (Align self) */
+.metalbat {
+    height: 600px;
+    width: 600px;
+    padding: 10px;
+    margin: 20px;
+    border: 3px solid black;
+    background-color: rgb(131, 139, 209);
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: start;
+
+    
+}
+
+#p1 { background-color: rgb(89, 97, 165);}
+#p2 { background-color: rgb(148, 18, 98);}
+#p3 { background-color: rgb(126, 89, 97);   align-self: center;}
+#p4 { background-color: rgb(179, 86, 24);}
+
+/* 36. Properties: Flex Items (Flex Shrink) */
+.smox {
+    height: 200px;
+    width: 200px;
+    border: 3px solid black;
+    margin: 5px;
+}
+.kaley {
+    height: 300px;
+    width: 600px;
+    padding: 10px;
+    margin: 20px;
+    border: 3px solid black;
+    background-color: rgb(131, 139, 209);
+    
+    display: flex;
+    justify-content: center;
+    
+
+    
+}
+#w1 { background-color: rgb(79, 80, 94);}
+#w2 { 
+    background-color: rgb(11, 127, 236); 
+    /* flex-shrink: 0.5; */
+    flex-shrink: 0;
+}
+#w3 { background-color: rgb(160, 160, 160);}
+#w4 { background-color: rgb(99, 59, 114);}
+
+
+
+/* 36. Properties: Flex Items (Flex Grow) */
+.blue {
+    height: 75px;
+    width: 75px;
+    border: 3px solid black;
+    margin: 5px;
+    flex-grow: 1;
+}
+.bailey {
+    height: 600px;
+    width: 600px;
+    padding: 10px;
+    margin: 20px;
+    border: 3px solid black;
+    background-color: rgb(207, 160, 207);
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: start;
+
+    
+}
+#x1 { 
+    background-color: rgb(89, 97, 165);
+    /* flex-grow: 1;  for specific change*/
+}  /*default is 0*/
+#x2 {
+     background-color: rgb(148, 18, 98);
+     flex-grow: 2;
+    }
+#x3 { background-color: rgb(126, 89, 97);}
+#x4 { background-color: rgb(179, 86, 24);}
+
+
+/* 36. Properties: Flex Items (Order) */
+.haley {
+    height: 600px;
+    width: 600px;
+    padding: 10px;
+    margin: 20px;
+    border: 3px solid black;
+    background-color: rgb(131, 139, 209);
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+#z1 {
+     background-color: rgb(89, 97, 165);
+     order: 4;
+    }
+#z2 { 
+    background-color: rgb(148, 18, 98);
+    order: 2;
+}
+#z3 { 
+    background-color: rgb(126, 89, 97);
+    order: 3;
+}
+#z4 { 
+    background-color: rgb(179, 86, 24);
+    order: 1;
+}
+
+/* Grid */
+/* .chow {
+    height: 75px;
+    width: 75px;
+    border: 3px solid black;
+    margin: 5px;
+} */
+
+.gridContainer {
+    height: 300px;
+    width: 600px;
+    padding: 10px;
+    margin: 20px;
+    border: 3px solid black;
+    background-color: rgb(131, 139, 209);
+    
+
+    display: grid;
+    grid-template-columns: 100px 100px;
+    grid-template-rows: 100px 100px;
+}
+
+#item1 {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2; /*first out of 2 columns*/
+    background-color: lightblue;
+
+
+}
+#item2 {
+    grid-row: 1 / 2;
+    grid-column: 2 / 2;
+    background-color: lightgreen;
+
+    
+}
+#item3 {
+    grid-row: 2 / 2;
+    grid-column: 1 / 2;
+    background-color: lightpink;
+
+}
+#item4 {
+    grid-row: 2 / 2;
+    grid-column: 2 / 2;
+    background-color: lightyellow;
+}
+
+/*38. Media Queries*/
+
+.boxx1 {
+    height: 100px;
+    width: 100px;
+    margin: auto;
+    padding: 10px;
+    border: 2px solid rebeccapurple;
+    background-color: dodgerblue;
+}
+@media screen and (width: 300px) {
+    .boxx {
+        background-color: deeppink;
+    }
+    
+}
+/* Note : Generally we don't use it on heigth as length is scrollable.
+          Also we don't particularly use it on width as, for different devices we won't 
+          be able to make it work because its is so precise.*/
+
+/* min-width */
+.boxx2 {
+    height: 100px;
+    width: 100px;
+    margin: auto;
+    padding: 10px;
+    border: 2px solid rgb(51, 133, 153);
+    background-color: rgb(108, 66, 175);
+}
+@media screen and (min-width: 300px) {
+    .boxx2 {
+        height: 150px;
+        width: 150px;
+        background-color: lawngreen;
+    }
+}
+
+/* max-width */
+.boxx3 {
+    height: 100px;
+    width: 100px;
+    margin: auto;
+    padding: 10px;
+    border: 2px solid rgb(16, 145, 54);
+    background-color: rgb(206, 17, 181);
+}
+@media screen and (max-width: 300px) {
+    .boxx3 {
+        background-color: tomato;
+    }
+    
+}
+
+/*38. Media Queries (combination)*/
+.boxx4 {
+    height: 100px;
+    width: 100px;
+    margin: auto;
+    padding: 10px;
+    border: 2px solid rgb(8, 1, 51);
+    background-color: rgb(128, 25, 110);
+}
+@media screen and (min-width: 250px) and (max-width: 300px) {
+    .boxx4 {
+        border-radius: 50%;
+        background-color: darkseagreen;
+    }
+}
+/* @media screen and (min-width: 250px)    or 
+    (max-width: 300px) {
+    .boxx4 {
+        border-radius: 50%;
+        background-color: darkseagreen;
+    }
+} */

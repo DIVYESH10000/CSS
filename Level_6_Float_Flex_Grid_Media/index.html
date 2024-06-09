@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Level_6_CSS</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/0025b41989.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <header>
+        <h1>LEVEL 6 CSS</h1>
+        <div id="icon">
+            <i class="fa-brands fa-css3-alt fa-2xl"></i>
+        </div>
+        <nav >
+            <a href="#1">31. Float Property</a>
+            <a href="#2">32. What is Flexbox?</a>
+            <a href="#3">33. Flex Model</a>
+            <a href="#4">34. Flexbox Direction</a>
+            <a href="#5">35. Properties: Flexbox container</a>
+            <a href="#6">36. Properties: Flex Items</a>
+            <a href="#7">37. Grid Layout</a>
+            <a href="#8">38. Media Queries</a>
+        </nav>
+    </header>
+    <main>
+         <section id="1">
+            <pre>
+                <b style="text-decoration: underline;">31. Float Property</b> <br>
+                • <span>Element Alignment:</span> Allows elements to be aligned to the left or right within their containing element.
+                                                  
+                •<span> Values:</span> Can take values like "left", "right", or "none" to determine the floating direction.
+                                
+                • <span>Old Layout Technique:</span> Less commonly used with the advent of Flexbox.
+            </pre>
+            <div id="container1">
+                <div id="box1" class="box">Box 1</div>
+            </div>
+         </section>
+         <section id="2">
+            <pre>
+                <b style="text-decoration: underline;">32. What is Flexbox?</b>
+                Flexbox is a <span>one-dimensional layout</span> method for <span>arranging items in rows or columns</span>.
+                Items flex (expand) to fill additional space or shrink to fit into smaller spaces.
+
+                                                                <img src="https://miro.medium.com/v2/resize:fit:640/format:webp/0*K2QITvkNmQg6FpqQ" alt="">
+                <img src="flex.png" alt="">
+            </pre>
+         </section>
+         <section id="3">
+            <pre>
+                <b style="text-decoration: underline;">33. Flex Model</b>
+
+                <img src="https://miro.medium.com/v2/resize:fit:640/format:webp/0*L-bRWW-yRP1QUXm-.png" alt="">
+
+                                        <span style="font-weight: bold; font-size:x-large">                    display : flex</span>
+            </pre>
+         </section>
+         <section id="4">
+            <pre>
+                <b style="text-decoration: underline;">34. Flexbox Direction</b>
+
+                • <span>Property Name</span>: flex-direction is the property used to define the direction in a flex container.
+                • <span>Row Layout</span>: row value aligns the flex items horizontally, in a left-to-right fashion.
+                • <span>Column Layout</span>: column value stacks the flex items vertically, from top to bottom.
+                • <span>Reverse Direction</span>: Adding -reverse to row or column (as in row-reverse or column-reverse) reverses
+                                                  the order of the items.
+
+
+                <img src="https://res.cloudinary.com/practicaldev/image/fetch/s----O5J3PQ--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/i/4jkkaafn2ef4osrtmhyg.png" alt="">
+
+                <b style="text-align: center; text-decoration: underline;">Flex Container</b>
+
+                <div id="container2">
+                    <div id="boxa" class="xbox">Flex Item 1</div>
+                    <div id="boxb" class="xbox">Flex Item 2</div>
+                    <div id="boxc" class="xbox">Flex Item 3</div>
+                    <div id="boxd" class="xbox">Flex Item 4</div>
+                </div>
+                Note : After certain point flex container STOPS honouring width to fit content inside Flex container.
+            </pre>
+         </section>
+         <section id="5">
+            <pre>
+                <b style="text-decoration: underline;">35. Properties: Flexbox container (Justify Content)</b>
+
+                • Alignment: Aligns flex items along the main axis.
+                • flex-start: Items align to the start of the flex container.
+                • flex-end: Items align to the end of the flex container.
+                • Center: Items are cantered within the flex container.
+                • space-between/space-around/space-evenly: Distributes space between items evenly.
+
+
+                <img src="https://miro.medium.com/v2/resize:fit:640/format:webp/1*l1y5XUQzU7sVX-XiOO2R_g.png" alt="">
+                
+                <div id="contFlex">
+                    <div id="boxm" class="bobo">Flex Item 1</div>
+                    <div id="boxn" class="bobo">Flex Item 2</div>
+                    <div id="boxo" class="bobo">Flex Item 3</div>
+                    <div id="boxp" class="bobo">Flex Item 4</div>
+                </div>
+
+                <b style="text-decoration: underline;">35. Properties: Flexbox container (Flex Wrap)</b>
+
+                <img src="https://www.cssmine.com//content/dist/images/original/flexbox-flex-direction.jpg" style="height: 600px;width: 50vw;" alt="">
+
+                Example :---
+
+                <div id="fc">
+                    <div id="apple" class="gogo">Flex Item 1</div>
+                    <div id="kiwi" class="gogo">Flex Item 2</div>
+                    <div id="banana" class="gogo">Flex Item 3</div>
+                    <div id="orange" class="gogo">Flex Item 4</div>
+                    <div id="fig" class="gogo">Flex Item 5</div>
+                    <div id="plum" class="gogo">Flex Item 6</div>
+                    <div id="plum" class="gogo">Flex Item 7</div>
+                  
+                </div>
+            
+                <p style="font-weight: bold; font-size: x-large;">Uptill now we learnt <span>justify content</span>, which works around ---- >  main-axis,
+                    now we'll learn to play with --- > cross-axis. Which will be done by Align items.
+                </p>
+
+                <b style="text-decoration: underline;">35. Properties: Flexbox container (Align Items)</b>
+
+                This property is used to <span>align</span> the flex container's items <span>along the cross-axis</span>, which is perpendicular to the main axis.
+
+                Example:----
+                
+                <div class="metalhead">
+                    <div id="b1" class="goa">Flex Item 1</div>
+                    <div id="b2" class="goa">Flex Item 2</div>
+                    <div id="b3" class="goa">Flex Item 3</div>
+                    <div id="b4" class="goa">Flex Item 4</div>
+                </div>
+               
+
+
+
+                <b style="text-decoration: underline;">35. Properties: Flexbox container (Align Content)</b>
+
+                It is utilized to adjust the <span>spacing between flex lines within a flex container</span>, particularly when there is extra space along the crossaxis.
+
+                Example:----
+
+                <div class="metalgear">
+                    <div id="c1" class="goa">Flex Item 1</div>
+                    <div id="c2" class="goa">Flex Item 2</div>
+                    <div id="c3" class="goa">Flex Item 3</div>
+                    <div id="c4" class="goa">Flex Item 4</div>
+                    <div id="kiwi" class="goa">Flex Item 5</div>
+                    <div id="banana" class="goa">Flex Item 6</div>
+                    <div id="c4" class="goa">Flex Item 7</div>
+                </div>
+
+                <b style="text-decoration: underline;">36. Properties: Flex Items (Align Self)</b>
+
+                Allows individual flex items to override the container's align-items property, aligning them differently along the cross-axis.
+                
+                Example:----
+
+                Note : Uptill now we learned to apply properties on <span>Container</span>, now we'll apply properties on <span>items</span> .
+
+                    <div class="metalbat">
+                        <div id="p1" class="goa">Flex Item 1</div>
+                        <div id="p2" class="goa">Flex Item 2</div>
+                        <div id="p3" class="goa">Flex Item 3</div>
+                        <div id="p4" class="goa">Flex Item 4</div>
+                    </div>
+
+
+                <b style="text-decoration: underline;">36. Properties: Flex Items (Flex Shrink)</b>
+
+                The "flex-shrink" property in CSS determines how much a flex item will shrink relative to other items in the flex container if there is insufficient space.
+            
+                Example:----
+                <div class="kaley">
+                    <div id="w1" class="smox">Flex Item 1</div>
+                    <div id="w2" class="smox">Flex Item 2</div>
+                    <div id="w3" class="smox">Flex Item 3</div>
+                    <div id="w4" class="smox">Flex Item 4</div>
+                </div>
+                
+                <b style="text-decoration: underline;">36. Properties: Flex Items (Flex Grow)</b>
+
+                The "flex-grow" property in CSS specifies how much a flex item will grow relative to other items in the flex container when additional space is available.
+            
+                Example:----
+                <div class="bailey">
+                    <div id="x1" class="blue">Flex Item 1</div>
+                    <div id="x2" class="blue">Flex Item 2</div>
+                    <div id="x3" class="blue">Flex Item 3</div>
+                    <div id="x4" class="blue">Flex Item 4</div>
+                </div>
+
+                <b style="text-decoration: underline;">36. Properties: Flex Items (Order)</b>
+
+                The "order" property in CSS allows you to define the sequence in which flex items appear within the flex container, overriding their original order in the HTML.
+
+                Example:----
+
+                <div class="haley">
+                    <div id="z1" class="goa">Flex Item 1</div>
+                    <div id="z2" class="goa">Flex Item 2</div>
+                    <div id="z3" class="goa">Flex Item 3</div>
+                    <div id="z4" class="goa">Flex Item 4</div>
+                </div>
+
+            </pre>
+         </section>
+         <section id="7">
+            <pre>
+                <b  style="text-decoration: underline;">37. Grid</b>
+                <h1>    Multi-Dimensional Layout    </h1>
+
+                <img src="https://miro.medium.com/v2/resize:fit:720/format:webp/0*rzW_onn9mWJbviEP.png" alt="">                
+
+
+                                    • 2D layout system for rows & columns.
+
+                                    • Activate with <span>display: grid;</span>.
+
+                                    • Children become grid items.
+
+                                    • Define structure with grid-template properties.
+
+                                    • Individual units called grid cells.
+
+
+                Example:----
+
+                <div class="gridContainer">
+                                    <div id="item1" class="goa">Item 1</div>
+                                    <div id="item2" class="goa">Item 2</div>
+                                    <div id="item3" class="goa">Item 3</div>
+                                    <div id="item4" class="goa">Item 4</div>
+                </div>
+            </pre>
+         </section>
+         <section id="8">
+            <pre>
+                <h1><b  style="text-decoration: underline;">38. Media Queries</b></h1>
+
+                <img src="https://cdn.hashnode.com/res/hashnode/image/upload/v1680270376128/5019c96b-ba92-4fdd-a68e-fa18e28df05d.png?auto=compress,format&format=webp" alt="">
+
+
+                • Tailor styles for specific device characteristics.
+
+                • Use to create <span>responsive</span> web designs.
+
+                • Apply styles based on conditions like screen size.
+
+                • Syntax: <span> @media (condition) { CSS rules}</span>.
+
+                • Can <span>combine</span> multiple conditions using and, or.
+
+                Example:----
+
+                <div class="boxx1">Box</div>
+
+                Note : Generally we don't use it on heigth as length is scrollable.
+                       Also we don't particularly use it on width as, for different devices we won't 
+                       be able to make it work because its is so precise. So solution is to use <span>min-width</span>.
+                
+                       <b>min-width</b>
+                <div class="boxx2">Box</div>       
+
+                        <b>max-width</b>
+                <div class="boxx3">Box</div>
+
+                        <b>38. Media Queries (combination)</b>
+                <div class="boxx4">Box</div>
+            </pre>
+         </section>
+
+    </main>
+    <footer>
+        If nothing changes, nothing changes.
+    </footer>
+</body>
+</html>
