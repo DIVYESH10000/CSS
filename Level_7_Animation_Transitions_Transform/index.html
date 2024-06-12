@@ -4,8 +4,158 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Level_7_CSS</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <header>
+        <h1>Level 7 : Animation, Transition & Transform</h1>
+        <nav>
+            <a href="#1">39. Pseudo Classes</a>
+            <a href="#2">40. Transitions</a>
+            <a href="#3">41. CSS Transform</a>
+            <a href="#4">42. Animation</a>
+        </nav>
+    </header>
+    <main>
+        <section id="1">
+            <pre>
+                <b style="text-decoration: underline; font-size: x-large;">39. Pseudo Classes</b>
+
+                • Used to define <span>special states</span> of HTML elements.
+
+                • Syntax: <span>selector:pseudo-class { styles }</span>.
+
+                • Common examples: <span>:hover, :active, :first-child</span>.
+
+                • Target elements based on their position or user action.
+                
+                <img src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*K6m3wOg_a03kanW520MRhA.png" alt="">
+
+                Note: <span>.pseudo:active</span> has <span>higher</span> priority.
+
+                Example:----
+                <button class="pseudo">Learning Pseudo</button>
+            </pre>
+        </section>
+        <section id="2">
+            <pre>
+                <b style="text-decoration: underline; font-size: x-large;">40. Transitions</b>
+
+                <img src="https://bitwaretechnologies.com/wp-content/uploads/2017/03/Transitions-600x173.png" alt="">
+
+                <span style="color: rgb(7, 143, 136);">CSS transition</span> is a property that <span style="color: rgb(192, 103, 214);">enables smooth animation between changes</span> in CSS property values.
+
+                • <span>transition-property</span>: Defines which CSS properties will transition.
+                • <span>transition-duration</span>: Sets how long the transition lasts.
+                • <span>transition-timing-function</span>: Controls the speed curve of the transition.
+                • <span>transition-delay</span>: Specifies a delay before the transition starts.
+
+                Example:---
+                
+                <button class="transitionProp">Transition Property</button>
+                
+            </pre>
+        </section>
+        <section id="3">
+            <pre>
+                <b style="text-decoration: underline; font-size: x-large;">41. CSS Transform</b>
+
+                <img src="https://www.htmldog.com/figures/transform.png" alt="">
+
+                • Allows modification of an element's shape and position.
+                • Can perform operations like rotate, scale, and translate.
+                • Does not affect the layout of surrounding elements.
+                • Used to create visual effects like 3D space transformations.
+                • Implemented with functions like rotate(), scale(), and translate().
+
+
+                Example:---
+
+                <b style="text-decoration: underline; font-size: medium;">41. CSS Transform (Rotate)</b>
+
+                Note :It works in 3-D plane, rotatex, rotatey and rotatez. By default it's in rotatez.
+
+                Example:----
+
+                <div id="a1" class="box">45<sup> deg</sup></div>
+                <div id="a2" class="box">180<sup> deg</sup></div>
+                <div id="a3" class="box">x<sup> 270</sup><sub>deg</sub></div>
+                <div id="a4" class="box">y<sup> 90</sup><sub>deg</sub></div>
+
+
+
+                <b style="text-decoration: underline; font-size: medium;">41. CSS Transform (Scale)</b>
+
+                Note :It works in 3-D plane, scalex, scaley and scalez. By default it's in scalez.
+
+                Example:----
+
+                <div id="b1" class="box">Scale Twice</div>
+                <div id="b2" class="box">Scale 4 Times</div>
+                <div id="b3" class="box">Scale x-axis <br>Thrice</div>
+                <div id="b4" class="box">Scale y-axis <br>Twice</div>
+
+
+
+                <b style="text-decoration: underline; font-size: medium;">41. CSS Transform (Translate)</b>
+
+                Note :It works in 3-D plane, translatex, translatey and translatez. By default it's in Translatex.
+                      <span>WE CAN PROVIDE -ve cvalue also. Example: translate(-50px) shows movement in -ve x-axis.</span>
+                
+                Example:----
+
+                <div id="c1" class="box">Translate <br> 50px</div>
+                <div id="c2" class="box">Translate <br> 50px 50px</div>
+                <div id="c3" class="box">Translate x-axis <br>50px</div>
+                <div id="c4" class="box">Scale y-axis <br>50px</div>
+
+                <b style="text-decoration: underline; font-size: medium;">41. CSS Transform (Skew)</b>
+                
+                Example:----
+
+                <div id="d1" class="box">skew <br>45deg</div>
+                <div id="d2" class="box">skew <br>180deg</div>
+                <div id="d3" class="box">skew<br>270deg</div>
+                <div id="d4" class="box">skew<br>90deg</div>
+            </pre>
+        </section>
+        <section id="4">
+            <pre>
+                <b style="text-decoration: underline; font-size: x-large;">42. Animation</b>
+
+                <img src="Ani.png" alt="">
+
+                <b style="text-decoration: underline; font-size: medium;">42. Animation Properties</b>
+
+                • <span>animation-name</span>: Specifies the name of the @keyframes defined animation.
+                • <span>animation-duration</span>: Defines the total time the animation takes to complete one cycle.
+                • <span>animation-timing-function</span>: Controls the pacing of the animation (e.g., linear, ease-in).
+                • <span>animation-delay</span>: Sets a delay before the animation starts, allowing for a pause before initiation.
+                • <span>animation-iteration-count</span>: Indicates the number of times the animation should repeat.
+                • <span>animation-direction</span>: Specifies the direction of the animation, allowing for reverse or alternate cycles.
+
+                Example:----
+
+                <div class="ani" style="font-weight: bold; font-size: x-large;">Animation</div>
+                Note : Can also use shorthand: <span>animation: name duration timing-function delay iteration-count direction fill-mode;</span>
+
+                
+                Note : <span>It's not necessuary that we have to show animation in one-direction.
+                             i.e. from{} to {} .  we can also provide to{} and from{} in percentages also.</span>
+
+                             <img src="per.png" alt="">
+
+                Example:----
+
+                <div class="tough">Animate</div>
+                    
+                <br><br><hr>
+            </pre>
+        </section>
+    </main>
+    <footer>
+        <hr>
+        Always look for the fool in the deal. If you don't find one, it's you.
+    </footer>
 </body>
 </html>
