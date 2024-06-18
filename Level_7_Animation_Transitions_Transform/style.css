@@ -31,11 +31,6 @@ header {
     width: 170px;
 }
 /* .pseudo:active */
-.pseudo:active {
-    height: 40px;
-    width: 170px;
-    background-color: orangered;
-}
 
 
 /* 40. Transitions */
